@@ -315,12 +315,12 @@ if (score3 >= 90) {
 **Opgave:**
 Opret variabel `age` = ?. Find ud af hvilke værdier der giver følgende output.
 
-| Output | Age værdi? |
-|--------|------------|
-| "Child" (< 13) | <input type="text" size="10"> |
-| "Teen" (< 18) | <input type="text" size="10"> |
-| "Adult" (< 65) | <input type="text" size="10"> |
-| "Senior" (>= 65) | <input type="text" size="10"> |
+| Output | Age værdi?                            |
+|--------|---------------------------------------|
+| "Child" (< 13) | <input type="text" size="10"></input> |
+| "Teen" (< 18) | <input type="text" size="10">    </input>     |
+| "Adult" (< 65) | <input type="text" size="10">   </input>      |
+| "Senior" (>= 65) | <input type="text" size="10">   </input>      |
 
 <details>
 <summary>Se svar</summary>
@@ -438,11 +438,8 @@ System.out.println("Grade: " + grade);
 ### Opgave 1.17: Password check
 
 **Opgave:**
-Opret `password` = "secret123". Check om det equals "secret123".
+Opret `password` = "secret123". Check om det er "secret123".
 
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Korrekt password check | <input type="text" size="40"> |
 
 <details>
 <summary>Se svar</summary>
