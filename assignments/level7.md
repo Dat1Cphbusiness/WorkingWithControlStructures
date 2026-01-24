@@ -11,7 +11,7 @@
 
 
 ### Opgave 7.1: Dit første for-each loop
-📖 [Se forklaring: For-Each Loop Basics](#for-each-loop-basics)
+📖 [Se forklaring: For-Each Loop Basics](../concepts/level7.md/#for-each-loop-basics)
 
 **Opgave:**
 Print alle tal i `{10, 20, 30, 40, 50}` med for-each.
@@ -121,7 +121,7 @@ for (int number : numbers) {
 ## Del B: For-Each with Strings
 
 ### Opgave 7.6: Print all names
-📖 [Se forklaring: For-Each with Strings](#for-each-with-strings)
+📖 [Se forklaring: For-Each with Strings](../concepts/level7.md/#for-each-with-strings)
 
 **Opgave:**
 Print alle navne i `{"Anna", "Bob", "Carl", "Diana"}`.
@@ -227,7 +227,7 @@ for (String name : names) {
 ## Del C: Calculations with For-Each
 
 ### Opgave 7.11: Sum array
-📖 [Se forklaring: Common Patterns with For-Each](#common-patterns-with-for-each)
+📖 [Se forklaring: Common Patterns with For-Each](../concepts/level7.md/#common-patterns-with-for-each)
 
 **Opgave:**
 Beregn sum af `{5, 10, 15, 20, 25}`.

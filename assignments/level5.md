@@ -12,14 +12,11 @@
 ## Del A: Basic For Loops
 
 ### Opgave 5.1: Dit første for loop
-📖 [Se forklaring: For Loop Basics](#for-loop-basics)
+📖 [Se forklaring: For Loop Basics](../concepts/level5.md/#for-loop-basics)
 
 **Opgave:**
 Print tallene 0 til 9 med for loop.
 
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="50"> |
 
 <details>
 <summary>Se svar</summary>
@@ -71,7 +68,7 @@ for (int i = 5; i <= 15; i++) {
 ## Del B: Counting Patterns
 
 ### Opgave 5.4: Count down
-📖 [Se forklaring: Counting Down](#counting-down)
+📖 [Se forklaring: Counting Down](../concepts/level5.md/#counting-down)
 
 **Opgave:**
 Print tallene 10 ned til 1.
@@ -162,7 +159,7 @@ for (int i = 0; i < 10; i++) {
 ## Del C: Accumulation with For
 
 ### Opgave 5.9: Sum 1 to 100
-📖 [Se forklaring: Accumulation with For](#accumulation-with-for)
+📖 [Se forklaring: Accumulation with For](../concepts/level5.md/#accumulation-with-for)
 
 **Opgave:**
 Beregn summen af alle tal fra 1 til 100.
@@ -268,7 +265,7 @@ System.out.println("Average: " + average);
 ## Del D: Nested For Loops
 
 ### Opgave 5.14: Multiplication table
-📖 [Se forklaring: Nested For Loops](#nested-for-loops)
+📖 [Se forklaring: Nested For Loops](../concepts/level5.md/#nested-for-loops)
 
 **Opgave:**
 Print gangetabellen for 5 (5×1 til 5×10).

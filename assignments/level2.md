@@ -8,7 +8,6 @@
 ---
 ## Del A: AND Operator (&&)
 ### Opgave 2.1: Simple AND
-📖 [Se forklaring: AND Operator](#and-operator-)
 
 **Opgave:**
 Opret `age` = 25 og `hasLicense` = true. Kun hvis BEGGE er true (age >= 18 AND hasLicense), print "Can drive".
@@ -124,7 +123,6 @@ if (hour >= 9 && hour <= 17) {
 ## Del B: OR Operator (||)
 
 ### Opgave 2.6: Simple OR
-📖 [Se forklaring: OR Operator](#or-operator-)
 
 **Opgave:**
 Opret `age` = 10. Print "Discount" hvis age < 12 OR age >= 65.
@@ -237,7 +235,6 @@ if (score >= 60 || (score >= 50 && hasRetake)) {
 ## Del C: NOT Operator (!)
 
 ### Opgave 2.11: Simple NOT
-📖 [Se forklaring: NOT Operator](#not-operator-)
 
 **Opgave:**
 Opret `isActive` = false. Print "Inactive" hvis NOT isActive.

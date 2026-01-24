@@ -10,7 +10,7 @@
 
 
 ### Opgave 1.1: Din første if statement
-📖 [Se forklaring: if Statement](#if-statement)
+
 
 **Opgave:**
 Opret en variabel `age` med værdi 20. Hvis age er >= 18, print "Du er myndig".
@@ -77,7 +77,6 @@ if (score >= 60) {
 ## Del B: if-else Statements
 
 ### Opgave 1.4: Pass or fail
-📖 [Se forklaring: if-else Statement](#if-else-statement)
 
 **Opgave:**
 Opret variabel `score` = 55. Print "PASS" hvis >= 60, ellers "FAIL".
@@ -225,7 +224,6 @@ if (speed > 130) {
 ## Del C: if-else if-else Chains
 
 ### Opgave 1.11: Letter grades
-📖 [Se forklaring: if-else if-else Chain](#if-else-if-else-chain)
 
 **Opgave:**
 Opret `score` = 85. Print letter grade: A(>=90), B(>=80), C(>=70), D(>=60), F(<60).
@@ -313,6 +311,7 @@ if (score3 >= 90) {
 ---
 
 ### Opgave 1.13: Age categories
+
 **Opgave:**
 Opret variabel `age` = ?. Find ud af hvilke værdier der giver følgende output.
 
@@ -437,7 +436,6 @@ System.out.println("Grade: " + grade);
 ## Del D: String Comparison
 
 ### Opgave 1.17: Password check
-📖 [Se forklaring: String Comparison](#string-comparison)
 
 **Opgave:**
 Opret `password` = "secret123". Check om det equals "secret123".

@@ -12,14 +12,10 @@
 ## Del A: Basic Switch Statements
 
 ### Opgave 3.1: Din første switch statement
-📖 [Se forklaring: Switch Statement Basics](#switch-statement-basics)
+📖 [Se forklaring: Switch Statement Basics](../concepts/level3.md/#switch-statement-basics)
 
 **Opgave:**
 Opret `day` = 3. Brug switch til at print day name (1=Monday, 2=Tuesday, 3=Wednesday).
-
-| day | Output |
-|-----|--------|
-| 3 | <input type="text" size="20"> |
 
 <details>
 <summary>Se svar</summary>
@@ -127,7 +123,7 @@ switch (day) {
 ## Del B: Switch with Strings
 
 ### Opgave 3.4: String switch
-📖 [Se forklaring: Switch med Strings](#switch-med-strings)
+📖 [Se forklaring: Switch med Strings](../concepts/level3.md/#switch-med-strings)
 
 **Opgave:**
 Opret `command` = "start". Print besked for: "start", "stop", "pause".
@@ -160,10 +156,6 @@ switch (command) {
 ### Opgave 3.5: Case sensitivity
 **Opgave:**
 Test om "START" matcher "start" i switch. Hvad sker der?
-
-| command | Matches "start"? |
-|---------|------------------|
-| "START" | <input type="text" size="10"> |
 
 <details>
 <summary>Se svar</summary>
@@ -295,7 +287,7 @@ System.out.println("Result: " + result);
 ## Del C: Grouping Cases (Fall-Through)
 
 ### Opgave 3.9: Weekend check
-📖 [Se forklaring: Grouping Cases](#grouping-cases-intentional-fall-through)
+📖 [Se forklaring: Grouping Cases](../concepts/level3.md/#grouping-cases-intentional-fall-through)
 
 **Opgave:**
 Brug grouped cases til at check weekend. Day 6 og 7 = "Weekend", 1-5 = "Weekday".

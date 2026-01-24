@@ -13,14 +13,11 @@
 ## Del A: Basic Array Iteration
 
 ### Opgave 6.1: Print array elements
-📖 [Se forklaring: Array Iteration with For Loop](/assignments/#array-iteration-with-for-loop)
+📖 [Se forklaring: Array Iteration with For Loop](../concepts/level6.md/#array-iteration-with-for-loop)
 
 **Opgave:**
 Opret array `{10, 20, 30, 40, 50}`. Print alle elementer.
 
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="60"> |
 
 <details>
 <summary>Se svar</summary>
@@ -122,7 +119,7 @@ for (int i = 0; i < numbers.length; i++) {
 ## Del B: Array Calculations
 
 ### Opgave 6.6: Sum array elements
-📖 [Se forklaring: Sum Pattern](#sum-pattern)
+📖 [Se forklaring: Sum Pattern](../concepts/level6.md/#sum-pattern)
 
 **Opgave:**
 Opret array `{10, 20, 30, 40, 50}`. Beregn sum.
@@ -246,10 +243,10 @@ System.out.println("Sum: " + sum);
 ## Del C: Search and Find
 
 ### Opgave 6.11: Find element
-📖 [Se forklaring: Find/Search Pattern](#findsearch-pattern)
+📖 [Se forklaring: Find/Search Pattern](../concepts/level6.md/#findsearch-pattern)
 
 **Opgave:**
-Opret array `{10, 20, 30, 40, 50}`. Find index af 30.
+Opret array `{10, 20, 30, 40, 50}`. Find index af 30. Giv besked hvis 30 ikke findes i array'et.
 
 <details>
 <summary>Se svar</summary>
@@ -388,7 +385,7 @@ System.out.println("Range: " + (max - min));
 ## Del D: Modifying Arrays
 
 ### Opgave 6.16: Double all values
-📖 [Se forklaring: Modifying Array Elements](#modifying-array-elements)
+📖 [Se forklaring: Modifying Array Elements](../concepts/level6.md/#modifying-array-elements)
 
 **Opgave:**
 Opret array `{5, 10, 15, 20}`. Dobl alle værdier og print before/after.
@@ -423,9 +420,16 @@ for (int i = 0; i < numbers.length; i++) {
 
 ### Opgave 6.17: Add constant
 **Opgave:**
-Opret array `{10, 20, 30, 40}`. Tilføj 5 til alle elementer.
+Opret array `{10, 20, 30, 40}`. Tilføj 5 til alle elementer i array'et. Print array'et før og efter.
 
 <details>
+<summary>Forventet output</summary>
+
+`Before: 10 20 30 40`
+`After: 15 25 35 45`
+</details>
+<details>
+
 <summary>Se svar</summary>
 
 ```java
@@ -444,8 +448,7 @@ System.out.println("\nAfter: ");
 for (int i = 0; i < numbers.length; i++) {
     System.out.print(numbers[i] + " ");
 }
-// Output: Before: 10 20 30 40
-//         After: 15 25 35 45
+
 ```
 </details>
 
@@ -453,7 +456,15 @@ for (int i = 0; i < numbers.length; i++) {
 
 ### Opgave 6.18: Set negatives to zero
 **Opgave:**
-Opret array `{10, -5, 20, -15, 30}`. Sæt alle negative tal til 0.
+Opret array `{10, -5, 20, -15, 30}`. Sæt alle negative tal til 0. Print array'et før og efter.
+
+<details>
+<summary>Forventet output</summary>
+
+`Before: 10 -5 20 -15 30`
+`After: 10 0 20 0 30`
+</details>
+<details>
 
 <details>
 <summary>Se svar</summary>
@@ -476,8 +487,7 @@ System.out.println("\nAfter:");
 for (int i = 0; i < numbers.length; i++) {
     System.out.print(numbers[i] + " ");
 }
-// Output: Before: 10 -5 20 -15 30
-//         After: 10 0 20 0 30
+
 ```
 </details>
 
@@ -486,6 +496,14 @@ for (int i = 0; i < numbers.length; i++) {
 ### Opgave 6.19: Normalize to percentage
 **Opgave:**
 Opret array `{25, 50, 75, 100}`. Divide alle med 100 for at få percentages.
+
+<details>
+<summary>Forventet output</summary>
+
+ `Output: 0.25, 0.5, 0.75, 1.0`
+
+</details>
+<details>
 
 <details>
 <summary>Se svar</summary>
@@ -502,7 +520,6 @@ System.out.println("Percentages:");
 for (int i = 0; i < percentages.length; i++) {
     System.out.println(percentages[i]);
 }
-// Output: 0.25, 0.5, 0.75, 1.0
 ```
 </details>
 
@@ -510,7 +527,16 @@ for (int i = 0; i < percentages.length; i++) {
 
 ### Opgave 6.20: Square all values
 **Opgave:**
-Opret array `{2, 3, 4, 5}`. Square alle værdier (multiply by themselves).
+Opret array `{2, 3, 4, 5}`. Square alle værdier (multiply by themselves). Print array'et før og efter.
+
+<details>
+<summary>Forventet output</summary>
+
+`Before: 2 3 4 5`
+`After: 4 9 16 25`
+
+</details>
+<details>
 
 <details>
 <summary>Se svar</summary>
@@ -531,8 +557,7 @@ System.out.println("\nAfter:");
 for (int i = 0; i < numbers.length; i++) {
     System.out.print(numbers[i] + " ");
 }
-// Output: Before: 2 3 4 5
-//         After: 4 9 16 25
+
 ```
 </details>
 
@@ -541,10 +566,18 @@ for (int i = 0; i < numbers.length; i++) {
 ## Del E: Reverse Iteration
 
 ### Opgave 6.21: Print backwards
-📖 [Se forklaring: Reverse Iteration](#reverse-iteration)
+📖 [Se forklaring: Reverse Iteration](../concepts/level6.md/#reverse-iteration)
 
 **Opgave:**
 Opret array `{10, 20, 30, 40, 50}`. Print i omvendt rækkefølge.
+
+
+<details>
+<summary>Forventet output</summary>
+
+`Output: 50 40 30 20 10`
+</details>
+<details>
 
 <details>
 <summary>Se svar</summary>
@@ -555,7 +588,7 @@ int[] numbers = {10, 20, 30, 40, 50};
 for (int i = numbers.length - 1; i >= 0; i--) {
     System.out.println(numbers[i]);
 }
-// Output: 50 40 30 20 10
+
 ```
 </details>
 
@@ -564,6 +597,19 @@ for (int i = numbers.length - 1; i >= 0; i--) {
 ### Opgave 6.22: Reverse sum
 **Opgave:**
 Opret array `{5, 10, 15, 20}`. Sum elementer bagfra.
+
+<details>
+<summary>Forventet output</summary>
+
+`Output: Adding 20, sum=20`
+`Adding 15, sum=35`
+`Adding 10, sum=45`
+`Adding 5, sum=50`
+
+</details>
+<details>
+
+
 
 <details>
 <summary>Se svar</summary>
@@ -578,10 +624,7 @@ for (int i = numbers.length - 1; i >= 0; i--) {
 }
 
 System.out.println("Total: " + sum);
-// Output: Adding 20, sum=20
-//         Adding 15, sum=35
-//         Adding 10, sum=45
-//         Adding 5, sum=50
+
 ```
 </details>
 
@@ -590,6 +633,14 @@ System.out.println("Total: " + sum);
 ### Opgave 6.23: Find last occurrence
 **Opgave:**
 Opret array `{10, 20, 30, 20, 40}`. Find sidste index af 20 (iterate backwards).
+
+<details>
+<summary>Forventet output</summary>
+
+`Last occurrence at index: 3`
+
+</details>
+<details>
 
 <details>
 <summary>Se svar</summary>
@@ -607,7 +658,7 @@ for (int i = numbers.length - 1; i >= 0; i--) {
 }
 
 System.out.println("Last occurrence at index: " + foundIndex);
-// Output: Last occurrence at index: 3
+
 ```
 </details>
 
@@ -616,6 +667,14 @@ System.out.println("Last occurrence at index: " + foundIndex);
 ### Opgave 6.24: Print alternating
 **Opgave:**
 Opret array `{1, 2, 3, 4, 5, 6}`. Print first, last, second, second-last, osv.
+
+<details>
+<summary>Forventet output</summary>
+
+` 1 6 2 5 3 4`
+
+</details>
+<details>
 
 <details>
 <summary>Se svar</summary>
@@ -633,7 +692,7 @@ while (left <= right) {
     left++;
     right--;
 }
-// Output: 1 6 2 5 3 4
+
 ```
 </details>
 

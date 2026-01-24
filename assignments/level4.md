@@ -10,14 +10,11 @@
 ## Del A: Basic While Loops
 
 ### Opgave 4.1: Dit første while loop
-📖 [Se forklaring: While Loop Basics](#while-loop-basics)
+📖 [Se forklaring: While Loop Basics](../concepts/level4.md/#while-loop-basics)
 
 **Opgave:**
 Brug while loop til at printe tallene 0 til 4.
 
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="50"> |
 
 <details>
 <summary>Se svar</summary>
@@ -75,24 +72,23 @@ while (i <= 20) {
 ## Del B: Counter Pattern
 
 ### Opgave 4.4: Count iterations
-📖 [Se forklaring: Counter Pattern](#counter-pattern)
+📖 [Se forklaring: Counter Pattern](../concepts/level4.md/#counter-pattern)
 
 **Opgave:**
-Tæl hvor mange gange loopen kører. Loop fra 0 til 9.
+Tæl hvor mange gange loop'et kører. Loop fra 0 til 9.
 
 <details>
 <summary>Se svar</summary>
 
 ```java
-int count = 0;
+
 int i = 0;
 
 while (i < 10) {
-    count++;
     i++;
 }
 
-System.out.println("Loop ran " + count + " times");
+System.out.println("Loop ran " + i + " times");
 // Output: Loop ran 10 times
 ```
 </details>
@@ -151,7 +147,7 @@ System.out.println("Multiples of 3: " + count);
 
 ### Opgave 4.7: Count digits
 **Opgave:**
-Tæl hvor mange cifre tallet 12345 har. Hint: divide by 10 gentagne gange.
+Tæl hvor mange cifre tallet 12345 har. Hint: dividér med 10 gentagne gange.
 
 <details>
 <summary>Se svar</summary>
@@ -200,7 +196,7 @@ System.out.println("Printed " + count + " numbers");
 ## Del C: Accumulator Pattern
 
 ### Opgave 4.9: Sum 1 to 10
-📖 [Se forklaring: Accumulator Pattern](#accumulator-pattern)
+📖 [Se forklaring: Accumulator Pattern](../concepts/level4.md/#accumulator-pattern)
 
 **Opgave:**
 Beregn summen af tallene 1 til 10.
@@ -251,7 +247,7 @@ System.out.println("Sum of even numbers: " + sum);
 
 ### Opgave 4.11: Product/factorial
 **Opgave:**
-Beregn factorial af 5 (5! = 5 × 4 × 3 × 2 × 1 = 120).
+Beregn produktet af 5. ( 5! = 5 × 4 × 3 × 2 × 1 = 120).
 
 <details>
 <summary>Se svar</summary>
@@ -274,7 +270,7 @@ System.out.println("5! = " + product);
 
 ### Opgave 4.12: Sum and count
 **Opgave:**
-Beregn sum OG count af tal mellem 1 og 100 der er delelige med 7.
+Beregn sum OG antal af tal mellem 1 og 100 der er delelige med 7.
 
 <details>
 <summary>Se svar</summary>
@@ -332,7 +328,7 @@ System.out.println("Average: " + average);
 ## Del D: Sentinel Values
 
 ### Opgave 4.14: Stop at -1
-📖 [Se forklaring: Sentinel Value](#sentinel-value)
+📖 [Se forklaring: Sentinel Value](../concepts/level4.md/#sentinel-value)
 
 **Opgave:**
 Print tal fra 10 og ned, men stop når du når -1 (brug -1 som sentinel).
