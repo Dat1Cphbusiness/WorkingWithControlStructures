@@ -1,20 +1,26 @@
-# Programmering 1: Kontrolstrukturer
+# Kontrolstrukturer
 
 ## Indhold
 
 ### Concepts (Forklaringer)
+**Betingelser**
 - [Level 1: Basic Conditionals](concepts/level1.md)
 - [Level 2: Relational & Logical Operators](concepts/level2.md)
 - [Level 3: Switch Statements](concepts/level3.md)
+------------
+**Loops**
 - [Level 4: While Loops](concepts/level4.md)
 - [Level 5: For Loops](concepts/level5.md)
 - [Level 6: For Loops med Arrays](concepts/level6.md)
 - [Level 7: Enhanced For Loops](concepts/level7.md)
 
 ### Assignments (Opgaver)
+**Betingelser**
 - [Level 1: Basic Conditionals](assignments/level1.md)
 - [Level 2: Relational & Logical Operators](assignments/level2.md)
 - [Level 3: Switch Statements](assignments/level3.md)
+------------
+**Loops**
 - [Level 4: While Loops](assignments/level4.md)
 - [Level 5: For Loops](assignments/level5.md)
 - [Level 6: For Loops med Arrays](assignments/level6.md)
@@ -56,7 +62,11 @@ Træningsopgaverne her forbereder dig til ugeopgaverne.
 
 ### Iterativt projekt
 
+
 [SP1](https://1sem.kursusmaterialer.dk/projects/SP1/) projektet følger dig gennem hele Flow1.
-Du er måske startet iterationen med variabler og i denne uge kan du så bygge videre med kontrolstrukturer. I de følgende uger vil du kunne fortsætte med metoder og objekter.
+Du er måske startet iterationen med variabler. I denne uge kan du så bygge videre med kontrolstrukturer. 
+I de følgende uger vil du kunne fortsætte med metoder og objekter.
+
+
 
 ---
