@@ -6,18 +6,14 @@
 - [Del D: String comparison – sammenligning af tekst](#del-d-string-comparison)
 - [Del E: Boolean variables – gem beslutninger i variabler](#del-e-boolean-variables)
 
+---
 
-
+## Del A: Simple if-statements
 
 ### Opgave 1.1: Din første if statement
 
-
 **Opgave:**
-Opret en variabel `age` med værdi 20. Hvis age er >= 18, print "Du er myndig".
-
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="50"> |
+Skriv kode der opretter variabel `age = 20`. Brug et if-statement til at printe "Du er myndig" hvis age >= 18.
 
 <details>
 <summary>Se svar</summary>
@@ -34,11 +30,7 @@ if (age >= 18) {
 
 ### Opgave 1.2: Temperature check
 **Opgave:**
-Opret en variabel `temperature` med værdi 30. Hvis temperature > 25, print "Det er varmt".
-
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="50"> |
+Skriv kode der opretter variabel `temperature = 30`. Brug et if-statement til at printe "Det er varmt" hvis temperature > 25.
 
 <details>
 <summary>Se svar</summary>
@@ -55,11 +47,7 @@ if (temperature > 25) {
 
 ### Opgave 1.3: Score check
 **Opgave:**
-Opret en variabel `score` med værdi 85. Hvis score >= 60, print "Bestået".
-
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="50"> |
+Skriv kode der opretter variabel `score = 85`. Brug et if-statement til at printe "Bestået" hvis score >= 60.
 
 <details>
 <summary>Se svar</summary>
@@ -79,11 +67,7 @@ if (score >= 60) {
 ### Opgave 1.4: Pass or fail
 
 **Opgave:**
-Opret variabel `score` = 55. Print "PASS" hvis >= 60, ellers "FAIL".
-
-| Score | Output |
-|-------|--------|
-| 55 | <input type="text" size="20"> |
+Skriv kode der opretter variabel `score = 55`. Brug et if-else statement til at printe "PASS" hvis score >= 60, ellers "FAIL".
 
 <details>
 <summary>Se svar</summary>
@@ -103,7 +87,7 @@ if (score >= 60) {
 
 ### Opgave 1.5: Adult or minor
 **Opgave:**
-Opret variabel `age` = 16. Print "Adult" hvis >= 18, ellers "Minor".
+Skriv kode der opretter variabel `age = 16`. Brug et if-else statement til at printe "Adult" hvis age >= 18, ellers "Minor".
 
 <details>
 <summary>Se svar</summary>
@@ -123,7 +107,7 @@ if (age >= 18) {
 
 ### Opgave 1.6: Positive or negative
 **Opgave:**
-Opret variabel `number` = -5. Print "Positive" hvis > 0, ellers "Not positive".
+Skriv kode der opretter variabel `number = -5`. Brug et if-else statement til at printe "Positive" hvis number > 0, ellers "Not positive".
 
 <details>
 <summary>Se svar</summary>
@@ -143,7 +127,7 @@ if (number > 0) {
 
 ### Opgave 1.7: Even or odd
 **Opgave:**
-Opret variabel `number` = 7. Print "Even" hvis (number % 2 == 0), ellers "Odd".
+Skriv kode der opretter variabel `number = 7`. Brug et if-else statement til at printe "Even" hvis number % 2 == 0, ellers "Odd".
 
 <details>
 <summary>Se svar</summary>
@@ -163,7 +147,7 @@ if (number % 2 == 0) {
 
 ### Opgave 1.8: Price discount
 **Opgave:**
-Opret `price` = 600.0. Hvis price > 500, print "Discount available", ellers "No discount".
+Skriv kode der opretter variabel `price = 600.0`. Brug et if-else statement til at printe "Discount available" hvis price > 500, ellers "No discount".
 
 <details>
 <summary>Se svar</summary>
@@ -183,7 +167,7 @@ if (price > 500) {
 
 ### Opgave 1.9: Stock availability
 **Opgave:**
-Opret `stock` = 0. Hvis stock > 0, print "Available", ellers "Out of stock".
+Skriv kode der opretter variabel `stock = 0`. Brug et if-else statement til at printe "Available" hvis stock > 0, ellers "Out of stock".
 
 <details>
 <summary>Se svar</summary>
@@ -203,7 +187,7 @@ if (stock > 0) {
 
 ### Opgave 1.10: Speed limit
 **Opgave:**
-Opret `speed` = 135. Hvis speed > 130, print "Speeding!", ellers "Within limit".
+Skriv kode der opretter variabel `speed = 135`. Brug et if-else statement til at printe "Speeding!" hvis speed > 130, ellers "Within limit".
 
 <details>
 <summary>Se svar</summary>
@@ -226,11 +210,12 @@ if (speed > 130) {
 ### Opgave 1.11: Letter grades
 
 **Opgave:**
-Opret `score` = 85. Print letter grade: A(>=90), B(>=80), C(>=70), D(>=60), F(<60).
-
-| Score | Grade |
-|-------|-------|
-| 85 | <input type="text" size="10"> |
+Skriv kode der opretter variabel `score = 85`. Brug et if-else-if-else statement til at printe letter grade baseret på score:
+- A hvis score >= 90
+- B hvis score >= 80
+- C hvis score >= 70
+- D hvis score >= 60
+- F hvis score < 60
 
 <details>
 <summary>Se svar</summary>
@@ -256,7 +241,7 @@ if (score >= 90) {
 
 ### Opgave 1.12: Flere karakterer
 **Opgave:**
-Test letter grade systemet med scores: 95, 72, 58. Print grade for hver.
+Skriv kode der tester letter grade systemet fra opgave 1.11 med tre forskellige scores: 95, 72, og 58. Print grade for hver score.
 
 <details>
 <summary>Se svar</summary>
@@ -313,15 +298,13 @@ if (score3 >= 90) {
 ### Opgave 1.13: Age categories
 
 **Opgave:**
-Skriv kode der checker en persons alder og printer en kategori.
+Skriv kode der checker en persons alder og printer en kategori. Opret variabel `age = 10` og brug et if-else-if-else statement til at printe:
+- "Child" hvis age < 13
+- "Teen" hvis age < 18
+- "Adult" hvis age < 65
+- "Senior" hvis age >= 65
 
-Brug følgende kategorier:
-- Under 13: "Child"
-- 13-17: "Teen"
-- 18-64: "Adult"
-- 65 og over: "Senior"
-
-Test din kode med age = 10, 15, 30, og 70.
+Test din kode derefter med age = 15, 30, og 70.
 
 <details>
 <summary>Se svar</summary>
@@ -330,13 +313,13 @@ Test din kode med age = 10, 15, 30, og 70.
 int age = 10;
 
 if (age < 13) {
-System.out.println("Child");
+    System.out.println("Child");
 } else if (age < 18) {
-System.out.println("Teen");
+    System.out.println("Teen");
 } else if (age < 65) {
-System.out.println("Adult");
+    System.out.println("Adult");
 } else {
-System.out.println("Senior");
+    System.out.println("Senior");
 }
 
 // Test med forskellige værdier:
@@ -347,11 +330,15 @@ System.out.println("Senior");
 ```
 </details>
 
-______
+---
 
 ### Opgave 1.14: Temperature ranges
 **Opgave:**
-Opret `temp` = 22. Print: "Freezing"(<0), "Cold"(<15), "Comfortable"(<25), "Hot"(>=25).
+Skriv kode der opretter variabel `temp = 22`. Brug et if-else-if-else statement til at printe:
+- "Freezing" hvis temp < 0
+- "Cold" hvis temp < 15
+- "Comfortable" hvis temp < 25
+- "Hot" hvis temp >= 25
 
 <details>
 <summary>Se svar</summary>
@@ -375,13 +362,13 @@ if (temp < 0) {
 
 ### Opgave 1.15: Ticket pricing
 **Opgave:**
-Baseret på alder, find billetpris. Opret forskellige aldersvariabler og test.
+Skriv kode der bestemmer billetpris baseret på alder. Opret variabel `age = 25` og `price` (uden værdi). Brug et if-else-if-else statement til at tildele price baseret på:
+- Child (age < 12): 50 kr
+- Teen (age < 18): 75 kr
+- Adult (age < 65): 100 kr
+- Senior (age >= 65): 60 kr
 
-Regler:
-- Child (< 12): 50 kr
-- Teen (< 18): 75 kr
-- Adult (< 65): 100 kr
-- Senior (>= 65): 60 kr
+Print "Price: [price] kr" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -409,7 +396,7 @@ System.out.println("Price: " + price + " kr");
 
 ### Opgave 1.16: Grade ranges
 **Opgave:**
-Score systemet fra før, men nu gem resultatet i en String variabel først.
+Skriv kode der opretter variabel `score = 88` og String variabel `grade` (uden værdi). Brug et if-else-if-else statement til at tildele grade baseret på score (samme regler som opgave 1.11). Print "Grade: [grade]" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -442,8 +429,7 @@ System.out.println("Grade: " + grade);
 ### Opgave 1.17: Password check
 
 **Opgave:**
-Opret `password` = "secret123". Check om det er "secret123".
-
+Skriv kode der opretter variabel `password = "secret123"`. Brug et if-else statement med `.equals()` til at printe "Access granted" hvis password er "secret123", ellers "Access denied".
 
 <details>
 <summary>Se svar</summary>
@@ -464,11 +450,7 @@ if (password.equals("secret123")) {
 
 ### Opgave 1.18: Case sensitivity
 **Opgave:**
-Test om "Hello" equals "hello" (case sensitive).
-
-| Comparison | Result |
-|------------|--------|
-| "Hello" equals "hello" | <input type="text" size="10"> |
+Skriv kode der opretter to String variabler: `word1 = "Hello"` og `word2 = "hello"`. Brug et if-else statement med `.equals()` til at printe "Match" hvis de er ens, ellers "No match".
 
 <details>
 <summary>Se svar</summary>
@@ -490,7 +472,7 @@ if (word1.equals(word2)) {
 
 ### Opgave 1.19: Multiple password attempts
 **Opgave:**
-Test tre forskellige passwords: "wrong", "Secret123", "secret123" mod correct = "secret123".
+Skriv kode der tester tre forskellige password attempts mod korrekt password "secret123". Opret variabel `correctPassword = "secret123"` og test disse tre attempts: "wrong", "Secret123", "secret123". Print "Correct" eller "Wrong" for hver.
 
 <details>
 <summary>Se svar</summary>
@@ -527,7 +509,9 @@ if (attempt3.equals(correctPassword)) {
 
 ### Opgave 1.20: Day of week
 **Opgave:**
-Opret `day` = "Monday". Hvis det er "Saturday" eller "Sunday", print "Weekend", ellers "Weekday".
+Skriv kode der opretter variabel `day = "Monday"`. Brug et if-else statement til at printe "Weekend" hvis day er "Saturday" eller "Sunday", ellers "Weekday".
+
+Hint: Brug `||` (OR operator) til at checke for begge weekend dage.
 
 <details>
 <summary>Se svar</summary>
@@ -550,7 +534,11 @@ Note: Vi bruger || (OR) som vi lærer i næste level!
 
 ### Opgave 1.21: Command processor
 **Opgave:**
-Opret `command` = "start". Print forskellig besked for: "start", "stop", "pause", andet.
+Skriv kode der opretter variabel `command = "start"`. Brug et if-else-if-else statement til at printe forskellig besked for hver command:
+- "start" → "Starting..."
+- "stop" → "Stopping..."
+- "pause" → "Pausing..."
+- andet → "Unknown command"
 
 <details>
 <summary>Se svar</summary>
@@ -577,7 +565,7 @@ if (command.equals("start")) {
 
 ### Opgave 1.22: Boolean flag
 **Opgave:**
-Opret `isActive` = true. Hvis isActive, print "System ON", ellers "System OFF".
+Skriv kode der opretter variabel `isActive = true`. Brug et if-else statement til at printe "System ON" hvis isActive er true, ellers "System OFF".
 
 <details>
 <summary>Se svar</summary>
@@ -598,7 +586,9 @@ if (isActive) {
 
 ### Opgave 1.23: Combining conditions
 **Opgave:**
-Opret `hasLicense` = true og `age` = 20. Print "Can drive" hvis begge er true (age >= 18 AND hasLicense).
+Skriv kode der opretter to variabler: `hasLicense = true` og `age = 20`. Brug et if-else statement til at printe "Can drive" hvis BEGGE betingelser er opfyldt (age >= 18 AND hasLicense), ellers "Cannot drive".
+
+Hint: Brug `&&` (AND operator).
 
 <details>
 <summary>Se svar</summary>
@@ -622,7 +612,7 @@ Note: Vi bruger && (AND) som vi lærer mere om i næste level!
 
 ### Opgave 1.24: Setting boolean based on condition
 **Opgave:**
-Opret `score` = 75. Sæt en boolean `passed` baseret på om score >= 60.
+Skriv kode der opretter variabel `score = 75` og boolean variabel `passed` (uden værdi). Brug et if-else statement til at sætte passed til true hvis score >= 60, ellers false. Print "Passed: [passed]" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -643,6 +633,7 @@ System.out.println("Passed: " + passed);
 </details>
 
 ---
+
 ## Refleksionsspørgsmål
 
 Efter du har løst opgaverne, tænk over:
@@ -652,4 +643,3 @@ Efter du har løst opgaverne, tænk over:
 4. Hvorfor bruger vi `.equals()` for Strings men `==` for ints?
 5. Hvad sker der hvis du glemmer `else` i en if-else if chain?
 6. Hvordan kan du teste om din condition virker korrekt?
-
