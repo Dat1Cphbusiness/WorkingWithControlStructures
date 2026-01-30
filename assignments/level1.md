@@ -313,37 +313,41 @@ if (score3 >= 90) {
 ### Opgave 1.13: Age categories
 
 **Opgave:**
-Opret variabel `age` = ?. Find ud af hvilke værdier der giver følgende output.
+Skriv kode der checker en persons alder og printer en kategori.
 
-| Output | Age værdi?                            |
-|--------|---------------------------------------|
-| "Child" (< 13) | <input type="text" size="10"></input> |
-| "Teen" (< 18) | <input type="text" size="10">    </input>     |
-| "Adult" (< 65) | <input type="text" size="10">   </input>      |
-| "Senior" (>= 65) | <input type="text" size="10">   </input>      |
+Brug følgende kategorier:
+- Under 13: "Child"
+- 13-17: "Teen"
+- 18-64: "Adult"
+- 65 og over: "Senior"
+
+Test din kode med age = 10, 15, 30, og 70.
 
 <details>
 <summary>Se svar</summary>
 
 ```java
-// Child
 int age = 10;
-if (age < 13) {
-    System.out.println("Child");
-} else if (age < 18) {
-    System.out.println("Teen");
-} else if (age < 65) {
-    System.out.println("Adult");
-} else {
-    System.out.println("Senior");
-}
-// Output: Child
 
-// Eksempler: Child=10, Teen=15, Adult=30, Senior=70
+if (age < 13) {
+System.out.println("Child");
+} else if (age < 18) {
+System.out.println("Teen");
+} else if (age < 65) {
+System.out.println("Adult");
+} else {
+System.out.println("Senior");
+}
+
+// Test med forskellige værdier:
+// age = 10 → Child
+// age = 15 → Teen
+// age = 30 → Adult
+// age = 70 → Senior
 ```
 </details>
 
----
+______
 
 ### Opgave 1.14: Temperature ranges
 **Opgave:**
