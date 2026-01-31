@@ -1,11 +1,10 @@
-# Level5 Opgaver: for loops
+# Level 5 Opgaver: for loops
 
 - [Del A: Grundlæggende for-loops](#del-a-basic-for-loops)
 - [Del B: Tælle-mønstre](#del-b-counting-patterns)
 - [Del C: Akkumulering med for](#del-c-accumulation-with-for)
 - [Del D: Nested for-loops](#del-d-nested-for-loops)
 - [Del E: For vs while – hvornår bruger man hvad](#del-e-for-vs-while)
-
 
 ---
 
@@ -15,8 +14,7 @@
 📖 [Se forklaring: For Loop Basics](../concepts/level5.md/#for-loop-basics)
 
 **Opgave:**
-Print tallene 0 til 9 med for loop.
-
+Skriv kode der bruger et for loop til at printe tallene 0 til 9.
 
 <details>
 <summary>Se svar</summary>
@@ -33,7 +31,7 @@ for (int i = 0; i < 10; i++) {
 
 ### Opgave 5.2: Count 1 to 10
 **Opgave:**
-Print tallene 1 til 10 (inklusiv).
+Skriv kode der bruger et for loop til at printe tallene 1 til 10 (inklusiv).
 
 <details>
 <summary>Se svar</summary>
@@ -50,7 +48,7 @@ for (int i = 1; i <= 10; i++) {
 
 ### Opgave 5.3: Custom range
 **Opgave:**
-Print tallene 5 til 15 (inklusiv).
+Skriv kode der bruger et for loop til at printe tallene 5 til 15 (inklusiv).
 
 <details>
 <summary>Se svar</summary>
@@ -71,7 +69,7 @@ for (int i = 5; i <= 15; i++) {
 📖 [Se forklaring: Counting Down](../concepts/level5.md/#counting-down)
 
 **Opgave:**
-Print tallene 10 ned til 1.
+Skriv kode der bruger et for loop til at printe tallene 10 ned til 1.
 
 <details>
 <summary>Se svar</summary>
@@ -88,7 +86,7 @@ for (int i = 10; i >= 1; i--) {
 
 ### Opgave 5.5: Even numbers
 **Opgave:**
-Print alle lige tal fra 0 til 20.
+Skriv kode der bruger et for loop til at printe alle lige tal fra 0 til 20.
 
 <details>
 <summary>Se svar</summary>
@@ -105,7 +103,7 @@ for (int i = 0; i <= 20; i += 2) {
 
 ### Opgave 5.6: Multiples of 5
 **Opgave:**
-Print alle tal fra 0 til 100 der er delelige med 5.
+Skriv kode der bruger et for loop til at printe alle tal fra 0 til 100 der er delelige med 5.
 
 <details>
 <summary>Se svar</summary>
@@ -122,7 +120,7 @@ for (int i = 0; i <= 100; i += 5) {
 
 ### Opgave 5.7: Odd numbers backward
 **Opgave:**
-Print ulige tal fra 19 ned til 1.
+Skriv kode der bruger et for loop til at printe ulige tal fra 19 ned til 1.
 
 <details>
 <summary>Se svar</summary>
@@ -139,7 +137,7 @@ for (int i = 19; i >= 1; i -= 2) {
 
 ### Opgave 5.8: Powers of 2
 **Opgave:**
-Print de første 10 powers of 2 (2^0 til 2^9).
+Skriv kode der printer de første 10 powers of 2 (2^0 til 2^9). Opret variabel `power = 1` før loopet og brug et for loop med `i` fra 0 til 9.
 
 <details>
 <summary>Se svar</summary>
@@ -162,7 +160,7 @@ for (int i = 0; i < 10; i++) {
 📖 [Se forklaring: Accumulation with For](../concepts/level5.md/#accumulation-with-for)
 
 **Opgave:**
-Beregn summen af alle tal fra 1 til 100.
+Skriv kode der beregner summen af alle tal fra 1 til 100. Opret `sum = 0` og brug et for loop.
 
 <details>
 <summary>Se svar</summary>
@@ -181,7 +179,7 @@ System.out.println("Sum: " + sum);
 
 ### Opgave 5.10: Factorial
 **Opgave:**
-Beregn 10! (10 factorial = 10 × 9 × 8 × ... × 1).
+Skriv kode der beregner 10! (10 factorial = 10 × 9 × 8 × ... × 1). Opret `factorial = 1` og brug et for loop.
 
 <details>
 <summary>Se svar</summary>
@@ -200,7 +198,7 @@ System.out.println("10! = " + factorial);
 
 ### Opgave 5.11: Sum even numbers
 **Opgave:**
-Sum alle lige tal fra 1 til 50.
+Skriv kode der summer alle lige tal fra 1 til 50. Opret `sum = 0` og brug et for loop.
 
 <details>
 <summary>Se svar</summary>
@@ -219,7 +217,7 @@ System.out.println("Sum of even numbers: " + sum);
 
 ### Opgave 5.12: Count multiples
 **Opgave:**
-Tæl hvor mange tal mellem 1 og 100 der er delelige med 7.
+Skriv kode der tæller hvor mange tal mellem 1 og 100 der er delelige med 7. Opret `count = 0` og brug et for loop med if-statement.
 
 <details>
 <summary>Se svar</summary>
@@ -240,7 +238,7 @@ System.out.println("Multiples of 7: " + count);
 
 ### Opgave 5.13: Average
 **Opgave:**
-Beregn gennemsnittet af tallene 1 til 20.
+Skriv kode der beregner gennemsnittet af tallene 1 til 20. Opret `sum = 0` og `count = 0`, brug et for loop, og beregn average efter loopet.
 
 <details>
 <summary>Se svar</summary>
@@ -268,7 +266,7 @@ System.out.println("Average: " + average);
 📖 [Se forklaring: Nested For Loops](../concepts/level5.md/#nested-for-loops)
 
 **Opgave:**
-Print gangetabellen for 5 (5×1 til 5×10).
+Skriv kode der printer gangetabellen for 5 (5×1 til 5×10). Opret variabel `n = 5` og brug et for loop.
 
 <details>
 <summary>Se svar</summary>
@@ -286,7 +284,7 @@ for (int i = 1; i <= 10; i++) {
 
 ### Opgave 5.15: Simple nested loop
 **Opgave:**
-Print (i,j) for i fra 1-3 og j fra 1-3.
+Skriv kode der printer (i,j) for i fra 1-3 og j fra 1-3. Brug nested for loops.
 
 <details>
 <summary>Se svar</summary>
@@ -309,7 +307,7 @@ for (int i = 1; i <= 3; i++) {
 
 ### Opgave 5.16: Number rectangle
 **Opgave:**
-Print 4 rows med tallene 1-5 i hver row.
+Skriv kode der printer 4 rows med tallene 1-5 i hver row. Brug nested for loops.
 
 <details>
 <summary>Se svar</summary>
@@ -333,7 +331,7 @@ for (int row = 1; row <= 4; row++) {
 
 ### Opgave 5.17: Star rectangle
 **Opgave:**
-Print et 5×7 rektangel af stjerner (*).
+Skriv kode der printer et 5×7 rektangel af stjerner (*). Brug nested for loops.
 
 <details>
 <summary>Se svar</summary>
@@ -353,7 +351,9 @@ for (int row = 1; row <= 5; row++) {
 
 ### Opgave 5.18: Right triangle
 **Opgave:**
-Print en højre-vinklet trekant af stjerner:
+Skriv kode der printer en højre-vinklet trekant af stjerner (5 rows). Brug nested for loops.
+
+Output:
 ```
 *
 **
@@ -379,7 +379,9 @@ for (int row = 1; row <= 5; row++) {
 
 ### Opgave 5.19: Number triangle
 **Opgave:**
-Print en trekant af tal:
+Skriv kode der printer en trekant af tal. Brug nested for loops.
+
+Output:
 ```
 1
 1 2
@@ -405,7 +407,9 @@ for (int row = 1; row <= 5; row++) {
 
 ### Opgave 5.20: Inverted triangle
 **Opgave:**
-Print en omvendt trekant:
+Skriv kode der printer en omvendt trekant. Brug nested for loops.
+
+Output:
 ```
 *****
 ****
@@ -433,9 +437,7 @@ for (int row = 5; row >= 1; row--) {
 
 ### Opgave 5.21: When to use for
 **Opgave:**
-Skriv dette med BÅDE for og while. Hvilket er mere passende?
-
-Print tal 1-10.
+Skriv kode der printer tal 1-10 med BÅDE for og while loop. Hvilket er mere passende?
 
 <details>
 <summary>Se svar</summary>
@@ -461,7 +463,7 @@ while (i <= 10) {
 
 ### Opgave 5.22: Convert while to for
 **Opgave:**
-Convert denne while loop til for loop:
+Omskriv denne while loop til et for loop:
 
 ```java
 int i = 0;
@@ -486,7 +488,7 @@ for (int i = 0; i < 20; i += 2) {
 
 ### Opgave 5.23: Sum comparison
 **Opgave:**
-Beregn sum 1-50 med BÅDE for og while. Sammenlign koden.
+Skriv kode der beregner sum 1-50 med BÅDE for og while loop. Sammenlign koden.
 
 <details>
 <summary>Se svar</summary>
@@ -514,7 +516,6 @@ System.out.println("Sum (while): " + sum2);
 </details>
 
 ---
-
 
 ## Refleksionsspørgsmål
 

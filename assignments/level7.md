@@ -1,4 +1,4 @@
-# Level7 Opgaver: For each loop
+# Level 7 Opgaver: For-each loop
 
 - [Del A: Grundlæggende for-each syntax](#del-a-basic-for-each)
 - [Del B: For-each med String-arrays](#del-b-for-each-with-strings)
@@ -7,15 +7,14 @@
 - [Del E: Hvornår for-each ikke virker](#del-e-when-not-to-use-for-each)
 
 ---
-## Del A: Basic For-Each
 
+## Del A: Basic For-Each
 
 ### Opgave 7.1: Dit første for-each loop
 📖 [Se forklaring: For-Each Loop Basics](../concepts/level7.md/#for-each-loop-basics)
 
 **Opgave:**
-Print alle tal i `{10, 20, 30, 40, 50}` med for-each.
-
+Skriv kode der opretter array `numbers = {10, 20, 30, 40, 50}`. Brug et for-each loop til at printe alle tal.
 
 <details>
 <summary>Se svar</summary>
@@ -34,7 +33,7 @@ for (int number : numbers) {
 
 ### Opgave 7.2: Print on one line
 **Opgave:**
-Print alle tal i `{1, 2, 3, 4, 5}` på én linje separeret med mellemrum.
+Skriv kode der opretter array `numbers = {1, 2, 3, 4, 5}`. Brug et for-each loop til at printe alle tal på én linje separeret med mellemrum.
 
 <details>
 <summary>Se svar</summary>
@@ -54,7 +53,7 @@ System.out.println();
 
 ### Opgave 7.3: Double each value (display only)
 **Opgave:**
-Print hver værdi i `{5, 10, 15, 20}` ganget med 2. (Modificer ikke array, bare print).
+Skriv kode der opretter array `numbers = {5, 10, 15, 20}`. Brug et for-each loop til at printe hver værdi ganget med 2. (Modificer ikke array, bare print).
 
 <details>
 <summary>Se svar</summary>
@@ -74,7 +73,7 @@ for (int number : numbers) {
 
 ### Opgave 7.4: Print with labels
 **Opgave:**
-Print hver værdi i `{100, 200, 300}` med label "Value: ".
+Skriv kode der opretter array `numbers = {100, 200, 300}`. Brug et for-each loop til at printe hver værdi med label "Value: ".
 
 <details>
 <summary>Se svar</summary>
@@ -96,7 +95,7 @@ for (int number : numbers) {
 
 ### Opgave 7.5: Print squares
 **Opgave:**
-Print kvadratet af hver værdi i `{2, 3, 4, 5}`.
+Skriv kode der opretter array `numbers = {2, 3, 4, 5}`. Brug et for-each loop til at printe kvadratet af hver værdi.
 
 <details>
 <summary>Se svar</summary>
@@ -124,7 +123,7 @@ for (int number : numbers) {
 📖 [Se forklaring: For-Each with Strings](../concepts/level7.md/#for-each-with-strings)
 
 **Opgave:**
-Print alle navne i `{"Anna", "Bob", "Carl", "Diana"}`.
+Skriv kode der opretter String array `names = {"Anna", "Bob", "Carl", "Diana"}`. Brug et for-each loop til at printe alle navne.
 
 <details>
 <summary>Se svar</summary>
@@ -143,7 +142,7 @@ for (String name : names) {
 
 ### Opgave 7.7: Greet everyone
 **Opgave:**
-Print "Hello, [name]!" for hver person i `{"Alice", "Bob", "Charlie"}`.
+Skriv kode der opretter String array `names = {"Alice", "Bob", "Charlie"}`. Brug et for-each loop til at printe "Hello, [name]!" for hver person.
 
 <details>
 <summary>Se svar</summary>
@@ -165,7 +164,7 @@ for (String name : names) {
 
 ### Opgave 7.8: Print lengths
 **Opgave:**
-Print længden af hver String i `{"cat", "elephant", "dog", "butterfly"}`.
+Skriv kode der opretter String array `words = {"cat", "elephant", "dog", "butterfly"}`. Brug et for-each loop til at printe længden af hver String.
 
 <details>
 <summary>Se svar</summary>
@@ -188,7 +187,7 @@ for (String word : words) {
 
 ### Opgave 7.9: Uppercase conversion
 **Opgave:**
-Print alle Strings i `{"hello", "world", "java"}` i uppercase.
+Skriv kode der opretter String array `words = {"hello", "world", "java"}`. Brug et for-each loop til at printe alle Strings i uppercase.
 
 <details>
 <summary>Se svar</summary>
@@ -207,7 +206,7 @@ for (String word : words) {
 
 ### Opgave 7.10: First character
 **Opgave:**
-Print første bogstav af hver String i `{"Anna", "Bob", "Carl"}`.
+Skriv kode der opretter String array `names = {"Anna", "Bob", "Carl"}`. Brug et for-each loop til at printe første bogstav af hver String.
 
 <details>
 <summary>Se svar</summary>
@@ -230,7 +229,7 @@ for (String name : names) {
 📖 [Se forklaring: Common Patterns with For-Each](../concepts/level7.md/#common-patterns-with-for-each)
 
 **Opgave:**
-Beregn sum af `{5, 10, 15, 20, 25}`.
+Skriv kode der opretter array `numbers = {5, 10, 15, 20, 25}`. Brug et for-each loop til at beregne sum. Opret `sum = 0`.
 
 <details>
 <summary>Se svar</summary>
@@ -252,7 +251,7 @@ System.out.println("Sum: " + sum);
 
 ### Opgave 7.12: Average
 **Opgave:**
-Beregn gennemsnit af `{10, 20, 30, 40, 50}`.
+Skriv kode der opretter array `numbers = {10, 20, 30, 40, 50}`. Brug et for-each loop til at beregne gennemsnit. Opret `sum = 0` og `count = 0`.
 
 <details>
 <summary>Se svar</summary>
@@ -277,7 +276,7 @@ System.out.println("Average: " + average);
 
 ### Opgave 7.13: Count positive numbers
 **Opgave:**
-Tæl hvor mange positive tal i `{-5, 10, -3, 8, 0, 15, -2}`.
+Skriv kode der opretter array `numbers = {-5, 10, -3, 8, 0, 15, -2}`. Brug et for-each loop til at tælle hvor mange positive tal der er. Opret `count = 0`.
 
 <details>
 <summary>Se svar</summary>
@@ -301,7 +300,7 @@ System.out.println("Positive numbers: " + count);
 
 ### Opgave 7.14: Find maximum
 **Opgave:**
-Find største tal i `{23, 45, 12, 67, 34, 89, 21}`.
+Skriv kode der opretter array `numbers = {23, 45, 12, 67, 34, 89, 21}`. Brug et for-each loop til at finde største tal. Opret `max = numbers[0]`.
 
 <details>
 <summary>Se svar</summary>
@@ -325,7 +324,7 @@ System.out.println("Maximum: " + max);
 
 ### Opgave 7.15: Product of all elements
 **Opgave:**
-Beregn produktet af `{2, 3, 4, 5}` (2 × 3 × 4 × 5).
+Skriv kode der opretter array `numbers = {2, 3, 4, 5}`. Brug et for-each loop til at beregne produktet (2 × 3 × 4 × 5). Opret `product = 1`.
 
 <details>
 <summary>Se svar</summary>
@@ -349,7 +348,7 @@ System.out.println("Product: " + product);
 
 ### Opgave 7.16: Same task, both ways
 **Opgave:**
-Print alle tal i `{1, 2, 3, 4, 5}` med BÅDE traditional for og for-each.
+Skriv kode der opretter array `numbers = {1, 2, 3, 4, 5}`. Print alle tal med BÅDE traditional for loop og for-each loop. Sammenlign.
 
 <details>
 <summary>Se svar</summary>
@@ -378,7 +377,7 @@ for (int number : numbers) {
 
 ### Opgave 7.17: When for-each is better
 **Opgave:**
-Sum array `{10, 20, 30, 40}` med both methods. Hvilken er simplest?
+Skriv kode der opretter array `numbers = {10, 20, 30, 40}`. Summer array med both traditional for og for-each. Hvilken er simplest?
 
 <details>
 <summary>Se svar</summary>
@@ -409,7 +408,7 @@ System.out.println("Sum (for-each): " + sum2);
 
 ### Opgave 7.18: When traditional for is needed
 **Opgave:**
-Print hver element MED index fra `{100, 200, 300}`. Kan du bruge for-each?
+Skriv kode der opretter array `numbers = {100, 200, 300}`. Print hver element MED index. Kan du bruge for-each? Forklar hvorfor/hvorfor ikke.
 
 <details>
 <summary>Se svar</summary>
@@ -430,7 +429,7 @@ for (int i = 0; i < numbers.length; i++) {
 
 ### Opgave 7.19: Read-only limitation
 **Opgave:**
-Forsøg at doble alle værdier i `{5, 10, 15}` med for-each. Hvad sker der?
+Skriv kode der opretter array `numbers = {5, 10, 15}`. Forsøg at doble alle værdier med for-each. Print array før og efter. Hvad sker der?
 
 <details>
 <summary>Se svar</summary>
@@ -516,7 +515,7 @@ for (int number : numbers) {
 
 ### Opgave 7.21: Partial iteration
 **Opgave:**
-Print kun first 3 elements fra `{10, 20, 30, 40, 50, 60}`. Kan du bruge for-each?
+Skriv kode der opretter array `numbers = {10, 20, 30, 40, 50, 60}`. Print kun first 3 elements. Kan du bruge for-each? Forklar.
 
 <details>
 <summary>Se svar</summary>
@@ -538,7 +537,7 @@ for (int i = 0; i < 3; i++) {
 
 ### Opgave 7.22: Backwards iteration
 **Opgave:**
-Print `{1, 2, 3, 4, 5}` backwards. Kan du bruge for-each?
+Skriv kode der opretter array `numbers = {1, 2, 3, 4, 5}`. Print backwards. Kan du bruge for-each?
 
 <details>
 <summary>Se svar</summary>
@@ -560,7 +559,7 @@ for (int i = numbers.length - 1; i >= 0; i--) {
 
 ### Opgave 7.23: Every other element
 **Opgave:**
-Print every other element fra `{10, 20, 30, 40, 50, 60}` (10, 30, 50).
+Skriv kode der opretter array `numbers = {10, 20, 30, 40, 50, 60}`. Print every other element (10, 30, 50). Kan du bruge for-each?
 
 <details>
 <summary>Se svar</summary>
@@ -582,7 +581,7 @@ for (int i = 0; i < numbers.length; i += 2) {
 
 ### Opgave 7.24: Comparing adjacent elements
 **Opgave:**
-Print hvor mange gange et tal er større end det næste i `{5, 3, 8, 2, 9}`.
+Skriv kode der opretter array `numbers = {5, 3, 8, 2, 9}`. Print hvor mange gange et tal er større end det næste. Kan du bruge for-each?
 
 <details>
 <summary>Se svar</summary>
@@ -609,7 +608,7 @@ System.out.println("Count: " + count);
 
 ### Opgave 7.25: Find index of element
 **Opgave:**
-Find index of 30 i `{10, 20, 30, 40, 50}`. Print index.
+Skriv kode der opretter array `numbers = {10, 20, 30, 40, 50}`. Find index of 30. Opret `target = 30`. Kan du bruge for-each?
 
 <details>
 <summary>Se svar</summary>
@@ -636,7 +635,6 @@ System.out.println("Found at index: " + foundIndex);
 
 ---
 
-
 ## Refleksionsspørgsmål
 
 Efter du har løst opgaverne, tænk over:
@@ -648,8 +646,3 @@ Efter du har løst opgaverne, tænk over:
 6. Er for-each read-only eller read-write?
 7. Hvilken loop type ville du vælge for at printe alle elementer? Hvorfor?
 8. Hvilken loop type ville du vælge for at finde et element ved index 5?
-
----
-
-
-
