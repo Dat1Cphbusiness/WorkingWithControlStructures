@@ -1,4 +1,4 @@
-# Level4 Opgaver: while Loops
+# Level 4 Opgaver: while Loops
 
 - [Del A: Grundlæggende while-loops](#del-a-basic-while-loops)
 - [Del B: Tæller-mønstret](#del-b-counter-pattern)
@@ -7,14 +7,14 @@
 - [Del E: Nedtælling og betingelser](#del-e-countdown-and-conditions)
 
 ---
+
 ## Del A: Basic While Loops
 
 ### Opgave 4.1: Dit første while loop
 📖 [Se forklaring: While Loop Basics](../concepts/level4.md/#while-loop-basics)
 
 **Opgave:**
-Brug while loop til at printe tallene 0 til 4.
-
+Skriv kode der bruger et while loop til at printe tallene 0 til 4. Opret variabel `i = 0` og increment den i loopet.
 
 <details>
 <summary>Se svar</summary>
@@ -33,7 +33,7 @@ while (i < 5) {
 
 ### Opgave 4.2: Count to 10
 **Opgave:**
-Print tallene 1 til 10 med while loop.
+Skriv kode der bruger et while loop til at printe tallene 1 til 10. Opret variabel `i = 1`.
 
 <details>
 <summary>Se svar</summary>
@@ -52,7 +52,7 @@ while (i <= 10) {
 
 ### Opgave 4.3: Count by 2
 **Opgave:**
-Print lige tal fra 0 til 20 (0, 2, 4, 6, ..., 20).
+Skriv kode der bruger et while loop til at printe lige tal fra 0 til 20 (0, 2, 4, 6, ..., 20). Opret variabel `i = 0` og increment med 2.
 
 <details>
 <summary>Se svar</summary>
@@ -75,13 +75,12 @@ while (i <= 20) {
 📖 [Se forklaring: Counter Pattern](../concepts/level4.md/#counter-pattern)
 
 **Opgave:**
-Tæl hvor mange gange loop'et kører. Loop fra 0 til 9.
+Skriv kode der tæller hvor mange gange et while loop kører. Brug loop fra 0 til 9 og print "Loop ran [count] times" efter loopet.
 
 <details>
 <summary>Se svar</summary>
 
 ```java
-
 int i = 0;
 
 while (i < 10) {
@@ -97,7 +96,7 @@ System.out.println("Loop ran " + i + " times");
 
 ### Opgave 4.5: Count even numbers
 **Opgave:**
-Tæl hvor mange lige tal der er mellem 1 og 20.
+Skriv kode der tæller hvor mange lige tal der er mellem 1 og 20. Opret variabel `count = 0` til at tælle og `i = 1` til at iterere.
 
 <details>
 <summary>Se svar</summary>
@@ -122,7 +121,7 @@ System.out.println("Even numbers: " + count);
 
 ### Opgave 4.6: Count multiples of 3
 **Opgave:**
-Tæl hvor mange tal mellem 1 og 30 der er delelige med 3.
+Skriv kode der tæller hvor mange tal mellem 1 og 30 der er delelige med 3. Brug et while loop.
 
 <details>
 <summary>Se svar</summary>
@@ -147,7 +146,7 @@ System.out.println("Multiples of 3: " + count);
 
 ### Opgave 4.7: Count digits
 **Opgave:**
-Tæl hvor mange cifre tallet 12345 har. Hint: dividér med 10 gentagne gange.
+Skriv kode der tæller hvor mange cifre tallet 12345 har. Hint: opret variabel `number = 12345` og dividér med 10 gentagne gange indtil number bliver 0.
 
 <details>
 <summary>Se svar</summary>
@@ -170,7 +169,7 @@ System.out.println("Digits: " + count);
 
 ### Opgave 4.8: Count down
 **Opgave:**
-Tæl ned fra 10 til 1 og tæl hvor mange tal du printer.
+Skriv kode der tæller ned fra 10 til 1 og tæller hvor mange tal du printer. Opret `i = 10` og `count = 0`. Print "Printed [count] numbers" efter loopet.
 
 <details>
 <summary>Se svar</summary>
@@ -199,7 +198,7 @@ System.out.println("Printed " + count + " numbers");
 📖 [Se forklaring: Accumulator Pattern](../concepts/level4.md/#accumulator-pattern)
 
 **Opgave:**
-Beregn summen af tallene 1 til 10.
+Skriv kode der beregner summen af tallene 1 til 10. Opret `sum = 0` og `i = 1`. Brug et while loop til at akkumulere summen.
 
 <details>
 <summary>Se svar</summary>
@@ -222,7 +221,7 @@ System.out.println("Sum: " + sum);
 
 ### Opgave 4.10: Sum even numbers
 **Opgave:**
-Beregn summen af alle lige tal fra 1 til 20.
+Skriv kode der beregner summen af alle lige tal fra 1 til 20. Brug et while loop.
 
 <details>
 <summary>Se svar</summary>
@@ -247,7 +246,7 @@ System.out.println("Sum of even numbers: " + sum);
 
 ### Opgave 4.11: Product/factorial
 **Opgave:**
-Beregn produktet af 5. ( 5! = 5 × 4 × 3 × 2 × 1 = 120).
+Skriv kode der beregner produktet af 5! (5 × 4 × 3 × 2 × 1 = 120). Opret `product = 1` og `i = 5`. Brug et while loop.
 
 <details>
 <summary>Se svar</summary>
@@ -270,7 +269,7 @@ System.out.println("5! = " + product);
 
 ### Opgave 4.12: Sum and count
 **Opgave:**
-Beregn sum OG antal af tal mellem 1 og 100 der er delelige med 7.
+Skriv kode der beregner sum OG antal af tal mellem 1 og 100 der er delelige med 7. Print både count og sum.
 
 <details>
 <summary>Se svar</summary>
@@ -298,7 +297,7 @@ System.out.println("Sum: " + sum);
 
 ### Opgave 4.13: Average
 **Opgave:**
-Beregn gennemsnittet af tallene 10, 20, 30, 40, 50 med while loop.
+Skriv kode der beregner gennemsnittet af tallene 10, 20, 30, 40, 50 med et while loop. Opret `sum = 0`, `count = 0`, og `i = 10`. Increment i med 10 hver gang.
 
 <details>
 <summary>Se svar</summary>
@@ -331,7 +330,7 @@ System.out.println("Average: " + average);
 📖 [Se forklaring: Sentinel Value](../concepts/level4.md/#sentinel-value)
 
 **Opgave:**
-Print tal fra 10 og ned, men stop når du når -1 (brug -1 som sentinel).
+Skriv kode der printer tal fra 10 og ned, men stopper når number bliver -1 (brug -1 som sentinel). Start med `number = 10`. Sæt number til -1 når number når 5.
 
 <details>
 <summary>Se svar</summary>
@@ -354,7 +353,7 @@ while (number != -1) {
 
 ### Opgave 4.15: Sum until zero
 **Opgave:**
-Start med 100. Træk 7 fra hver gang. Stop når number <= 0. Print antal steps.
+Skriv kode der starter med `number = 100`. Træk 7 fra hver gang. Stop når number <= 0. Print antal steps.
 
 <details>
 <summary>Se svar</summary>
@@ -379,7 +378,7 @@ System.out.println("Steps: " + steps);
 
 ### Opgave 4.16: Find square root
 **Opgave:**
-Find square root of 64 ved at teste tal fra 1 og op. Stop når found.
+Skriv kode der finder square root af 64 ved at teste tal fra 1 og op. Opret `target = 64`, `number = 1`, og `found = false`. Stop når found.
 
 <details>
 <summary>Se svar</summary>
@@ -406,7 +405,7 @@ System.out.println("Square root of " + target + " is " + number);
 
 ### Opgave 4.17: Halve until small
 **Opgave:**
-Start med 1000. Halver (divide by 2) indtil number < 10. Tæl steps.
+Skriv kode der starter med `number = 1000`. Halver (divide by 2) indtil number < 10. Tæl steps.
 
 <details>
 <summary>Se svar</summary>
@@ -432,7 +431,7 @@ System.out.println("Steps: " + steps);
 
 ### Opgave 4.18: Power of 2
 **Opgave:**
-Find den mindste power of 2 der er større end 1000. (2, 4, 8, 16, ...).
+Skriv kode der finder den mindste power of 2 der er større end 1000 (2, 4, 8, 16, ...). Opret `power = 1` og `exponent = 0`.
 
 <details>
 <summary>Se svar</summary>
@@ -457,7 +456,7 @@ System.out.println("2^" + exponent + " = " + power);
 
 ### Opgave 4.19: Countdown from 20
 **Opgave:**
-Tæl ned fra 20 til 1, men skip alle tal delelige med 3.
+Skriv kode der tæller ned fra 20 til 1, men skipper alle tal delelige med 3. Brug et while loop.
 
 <details>
 <summary>Se svar</summary>
@@ -479,7 +478,7 @@ while (i > 0) {
 
 ### Opgave 4.20: Stop on condition
 **Opgave:**
-Sum tal fra 1 og op. Stop når sum overstiger 100. Print hvor mange tal du summerede.
+Skriv kode der summer tal fra 1 og op. Stop når sum overstiger 100. Print hvor mange tal du summerede. Opret `sum = 0`, `i = 1`, og `count = 0`.
 
 <details>
 <summary>Se svar</summary>
@@ -506,7 +505,7 @@ System.out.println("Added " + count + " numbers");
 
 ### Opgave 4.21: Double until large
 **Opgave:**
-Start med 1. Dobl indtil number > 1000. Print number og antal doublings.
+Skriv kode der starter med `number = 1`. Dobl number indtil number > 1000. Print number og antal doublings.
 
 <details>
 <summary>Se svar</summary>
@@ -530,7 +529,7 @@ System.out.println("Doublings: " + doublings);
 
 ### Opgave 4.22: Multiple conditions
 **Opgave:**
-Increment i fra 0. Stop når ENTEN i > 50 OR i*i > 100.
+Skriv kode der incrementer `i` fra 0. Stop når ENTEN i > 50 OR i*i > 100. Print hvor i stopper og hvad i² er.
 
 <details>
 <summary>Se svar</summary>
@@ -553,7 +552,7 @@ System.out.println("i squared = " + (i * i));
 
 ### Opgave 4.23: Fibonacci until limit
 **Opgave:**
-Generate Fibonacci tal indtil værdi > 100. Print antal tal generated.
+Skriv kode der genererer Fibonacci tal indtil værdi > 100. Opret `a = 0`, `b = 1`, og `count = 0`. Print antal tal generated.
 
 <details>
 <summary>Se svar</summary>
@@ -578,7 +577,6 @@ System.out.println("Generated " + count + " numbers");
 </details>
 
 ---
-
 
 ## Refleksionsspørgsmål
 

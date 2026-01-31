@@ -1,20 +1,19 @@
-## Level 2 Opgaver: Boolske Operatorer (&&)
+## Level 2 Opgaver: Boolske Operatorer (&&, ||, !)
 
-- [Del A: AND-operator – begge betingelser skal være sande](#del-a-and-operator-)
-- [Del B: OR-operator – mindst én betingelse skal være sand](#del-b-or-operator-)
-- [Del C: NOT-operator – invertering af boolean](#del-c-not-operator-)
+- [Del A: AND-operator – begge betingelser skal være sande](#del-a-and-operator)
+- [Del B: OR-operator – mindst én betingelse skal være sand](#del-b-or-operator)
+- [Del C: NOT-operator – invertering af boolean](#del-c-not-operator)
 - [Del D: Kombinering af operatorer](#del-d-combining-operators)
 - [Del E: Komplekse betingelser med parenteser](#del-e-complex-conditions)
+
 ---
+
 ## Del A: AND Operator (&&)
+
 ### Opgave 2.1: Simple AND
 
 **Opgave:**
-Opret `age` = 25 og `hasLicense` = true. Kun hvis BEGGE er true (age >= 18 AND hasLicense), print "Can drive".
-
-| <!-- --> | <!-- --> |
-|----------|----------|
-| Din kode | <input type="text" size="60"> |
+Skriv kode der opretter `age = 25` og `hasLicense = true`. Brug et if-statement med AND (&&) til at printe "Can drive" kun hvis begge betingelser er sande (age >= 18 AND hasLicense).
 
 <details>
 <summary>Se svar</summary>
@@ -34,11 +33,7 @@ if (age >= 18 && hasLicense) {
 
 ### Opgave 2.2: AND with false condition
 **Opgave:**
-Test med `age` = 25 og `hasLicense` = false. Hvad bliver output?
-
-| age >= 18 | hasLicense | Result |
-|-----------|------------|--------|
-| true | false | <input type="text" size="20"> |
+Skriv kode der opretter `age = 25` og `hasLicense = false`. Brug et if-else statement med AND til at printe "Can drive" eller "Cannot drive".
 
 <details>
 <summary>Se svar</summary>
@@ -60,7 +55,7 @@ if (age >= 18 && hasLicense) {
 
 ### Opgave 2.3: Multiple AND conditions
 **Opgave:**
-Check om et tal er mellem 10 og 20 (inclusive). Opret `number` = 15.
+Skriv kode der opretter `number = 15`. Brug et if-statement med AND til at checke om number er mellem 10 og 20 (inclusive). Print "Number is between 10 and 20" hvis betingelsen er sand.
 
 <details>
 <summary>Se svar</summary>
@@ -79,8 +74,7 @@ if (number >= 10 && number <= 20) {
 
 ### Opgave 2.4: Three conditions with AND
 **Opgave:**
-Opret `age` = 22, `hasTicket` = true, `isBanned` = false.
-Print "Welcome" kun hvis age >= 18 AND hasTicket AND NOT isBanned.
+Skriv kode der opretter `age = 22`, `hasTicket = true`, og `isBanned = false`. Brug et if-statement til at printe "Welcome" kun hvis age >= 18 AND hasTicket AND NOT isBanned.
 
 <details>
 <summary>Se svar</summary>
@@ -101,7 +95,7 @@ if (age >= 18 && hasTicket && !isBanned) {
 
 ### Opgave 2.5: Working hours check
 **Opgave:**
-Opret `hour` = 14. Check om det er working hours (9-17). Brug AND.
+Skriv kode der opretter `hour = 14`. Brug et if-else statement med AND til at checke om det er working hours (9-17 inclusive). Print "Working hours" eller "Outside working hours".
 
 <details>
 <summary>Se svar</summary>
@@ -125,11 +119,7 @@ if (hour >= 9 && hour <= 17) {
 ### Opgave 2.6: Simple OR
 
 **Opgave:**
-Opret `age` = 10. Print "Discount" hvis age < 12 OR age >= 65.
-
-| age | age < 12 | age >= 65 | Result |
-|-----|----------|-----------|--------|
-| 10 | <input type="text" size="10"> | <input type="text" size="10"> | <input type="text" size="20"> |
+Skriv kode der opretter `age = 10`. Brug et if-statement med OR (||) til at printe "Discount" hvis age < 12 OR age >= 65.
 
 <details>
 <summary>Se svar</summary>
@@ -148,7 +138,7 @@ if (age < 12 || age >= 65) {
 
 ### Opgave 2.7: Weekend check
 **Opgave:**
-Opret `day` = "Saturday". Print "Weekend" hvis day er "Saturday" OR "Sunday".
+Skriv kode der opretter `day = "Saturday"`. Brug et if-else statement med OR til at printe "Weekend" hvis day er "Saturday" OR "Sunday", ellers "Weekday".
 
 <details>
 <summary>Se svar</summary>
@@ -169,7 +159,7 @@ if (day.equals("Saturday") || day.equals("Sunday")) {
 
 ### Opgave 2.8: Emergency contact
 **Opgave:**
-Print "Call emergency" hvis `temperature` > 39 OR `temperature` < 35. Test med temp = 40.
+Skriv kode der opretter `temperature = 40`. Brug et if-else statement med OR til at printe "Call emergency" hvis temperature > 39 OR temperature < 35, ellers "Normal temperature".
 
 <details>
 <summary>Se svar</summary>
@@ -190,7 +180,7 @@ if (temperature > 39 || temperature < 35) {
 
 ### Opgave 2.9: Multiple valid inputs
 **Opgave:**
-Opret `command` = "start". Print "Valid" hvis command er "start" OR "run" OR "begin".
+Skriv kode der opretter `command = "start"`. Brug et if-else statement med OR til at printe "Valid" hvis command er "start" OR "run" OR "begin", ellers "Invalid".
 
 <details>
 <summary>Se svar</summary>
@@ -211,8 +201,7 @@ if (command.equals("start") || command.equals("run") || command.equals("begin"))
 
 ### Opgave 2.10: Pass with retake
 **Opgave:**
-Student passar hvis `score` >= 60 OR (`score` >= 50 AND `hasRetake` = true).
-Test med score = 55, hasRetake = true.
+Skriv kode der opretter `score = 55` og `hasRetake = true`. Student passar hvis score >= 60 OR (score >= 50 AND hasRetake). Brug et if-else statement til at printe "Pass" eller "Fail".
 
 <details>
 <summary>Se svar</summary>
@@ -237,11 +226,7 @@ if (score >= 60 || (score >= 50 && hasRetake)) {
 ### Opgave 2.11: Simple NOT
 
 **Opgave:**
-Opret `isActive` = false. Print "Inactive" hvis NOT isActive.
-
-| isActive | !isActive | Output |
-|----------|-----------|--------|
-| false | <input type="text" size="10"> | <input type="text" size="20"> |
+Skriv kode der opretter `isActive = false`. Brug et if-statement med NOT (!) til at printe "Inactive" hvis NOT isActive.
 
 <details>
 <summary>Se svar</summary>
@@ -260,11 +245,7 @@ if (!isActive) {
 
 ### Opgave 2.12: Double negative
 **Opgave:**
-Opret `isNotReady` = false. Hvad er `!isNotReady`?
-
-| isNotReady | !isNotReady | Betydning |
-|------------|-------------|-----------|
-| false | <input type="text" size="10"> | <input type="text" size="20"> |
+Skriv kode der opretter `isNotReady = false`. Brug et if-statement med NOT til at printe "Is ready" hvis NOT isNotReady.
 
 <details>
 <summary>Se svar</summary>
@@ -284,7 +265,7 @@ if (!isNotReady) {
 
 ### Opgave 2.13: Access denied
 **Opgave:**
-Print "Access denied" hvis NOT `hasPermission`. Test med hasPermission = false.
+Skriv kode der opretter `hasPermission = false`. Brug et if-else statement med NOT til at printe "Access denied" hvis NOT hasPermission, ellers "Access granted".
 
 <details>
 <summary>Se svar</summary>
@@ -305,7 +286,7 @@ if (!hasPermission) {
 
 ### Opgave 2.14: NOT with AND
 **Opgave:**
-Opret `age` = 20, `hasID` = false. Print "Entry denied" hvis age >= 18 AND NOT hasID.
+Skriv kode der opretter `age = 20` og `hasID = false`. Brug et if-statement til at printe "Entry denied - need ID" hvis age >= 18 AND NOT hasID.
 
 <details>
 <summary>Se svar</summary>
@@ -325,8 +306,7 @@ if (age >= 18 && !hasID) {
 
 ### Opgave 2.15: System status
 **Opgave:**
-Opret `isRunning` = true, `hasErrors` = false.
-Print "System OK" hvis isRunning AND NOT hasErrors.
+Skriv kode der opretter `isRunning = true` og `hasErrors = false`. Brug et if-else statement til at printe "System OK" hvis isRunning AND NOT hasErrors, ellers "System issue".
 
 <details>
 <summary>Se svar</summary>
@@ -350,8 +330,7 @@ if (isRunning && !hasErrors) {
 
 ### Opgave 2.16: AND + OR together
 **Opgave:**
-Student får bonus hvis (`score` >= 90) OR (`score` >= 80 AND `hasAttendance`).
-Test med score = 85, hasAttendance = true.
+Skriv kode der opretter `score = 85` og `hasAttendance = true`. Student får bonus hvis (score >= 90) OR (score >= 80 AND hasAttendance). Brug et if-else statement til at printe "Bonus awarded" eller "No bonus".
 
 <details>
 <summary>Se svar</summary>
@@ -373,8 +352,7 @@ if (score >= 90 || (score >= 80 && hasAttendance)) {
 
 ### Opgave 2.17: Complex eligibility
 **Opgave:**
-Eligible hvis: (age >= 18 AND age < 65) AND (hasLicense OR hasPermit).
-Test med age = 30, hasLicense = false, hasPermit = true.
+Skriv kode der opretter `age = 30`, `hasLicense = false`, og `hasPermit = true`. Eligible hvis: (age >= 18 AND age < 65) AND (hasLicense OR hasPermit). Brug et if-else statement til at printe "Eligible" eller "Not eligible".
 
 <details>
 <summary>Se svar</summary>
@@ -397,8 +375,7 @@ if ((age >= 18 && age < 65) && (hasLicense || hasPermit)) {
 
 ### Opgave 2.18: Discount logic
 **Opgave:**
-Discount hvis: (isMember OR purchaseAmount > 500) AND NOT blacklisted.
-Test med isMember = false, purchaseAmount = 600, blacklisted = false.
+Skriv kode der opretter `isMember = false`, `purchaseAmount = 600.0`, og `blacklisted = false`. Discount hvis: (isMember OR purchaseAmount > 500) AND NOT blacklisted. Brug et if-else statement til at printe "Discount available" eller "No discount".
 
 <details>
 <summary>Se svar</summary>
@@ -421,8 +398,7 @@ if ((isMember || purchaseAmount > 500) && !blacklisted) {
 
 ### Opgave 2.19: Login validation
 **Opgave:**
-Kan logge ind hvis: (correctPassword AND accountActive) OR isAdmin.
-Test med correctPassword = true, accountActive = false, isAdmin = false.
+Skriv kode der opretter `correctPassword = true`, `accountActive = false`, og `isAdmin = false`. Kan logge ind hvis: (correctPassword AND accountActive) OR isAdmin. Brug et if-else statement til at printe "Login successful" eller "Login failed".
 
 <details>
 <summary>Se svar</summary>
@@ -445,8 +421,7 @@ if ((correctPassword && accountActive) || isAdmin) {
 
 ### Opgave 2.20: Priority access
 **Opgave:**
-Priority hvis: (isVIP OR (isMember AND points > 1000)) AND NOT suspended.
-Test forskellige kombinationer.
+Skriv kode der opretter `isVIP = false`, `isMember = true`, `points = 1200`, og `suspended = false`. Priority hvis: (isVIP OR (isMember AND points > 1000)) AND NOT suspended. Brug et if-else statement til at printe "Priority access" eller "Standard access".
 
 <details>
 <summary>Se svar</summary>
@@ -472,8 +447,7 @@ if ((isVIP || (isMember && points > 1000)) && !suspended) {
 
 ### Opgave 2.21: Temperature comfort zone
 **Opgave:**
-Comfortable hvis temp mellem 18-25 AND humidity mellem 30-60.
-Test med temp = 22, humidity = 45.
+Skriv kode der opretter `temp = 22` og `humidity = 45`. Comfortable hvis temp mellem 18-25 AND humidity mellem 30-60. Brug et if-else statement til at printe "Comfortable" eller "Uncomfortable".
 
 <details>
 <summary>Se svar</summary>
@@ -495,8 +469,7 @@ if ((temp >= 18 && temp <= 25) && (humidity >= 30 && humidity <= 60)) {
 
 ### Opgave 2.22: Valid date ranges
 **Opgave:**
-Valid hvis (month mellem 1-12) AND (day mellem 1-31) AND (year > 1900).
-Test med month = 6, day = 15, year = 2024.
+Skriv kode der opretter `month = 6`, `day = 15`, og `year = 2024`. Valid hvis (month mellem 1-12) AND (day mellem 1-31) AND (year > 1900). Brug et if-else statement til at printe "Valid date" eller "Invalid date".
 
 <details>
 <summary>Se svar</summary>
@@ -519,8 +492,7 @@ if ((month >= 1 && month <= 12) && (day >= 1 && day <= 31) && (year > 1900)) {
 
 ### Opgave 2.23: Multiple criteria search
 **Opgave:**
-Match hvis: (price mellem 100-500) AND (category er "Electronics" OR "Books") AND inStock.
-Test med price = 299, category = "Electronics", inStock = true.
+Skriv kode der opretter `price = 299.0`, `category = "Electronics"`, og `inStock = true`. Match hvis: (price mellem 100-500) AND (category er "Electronics" OR "Books") AND inStock. Brug et if-else statement til at printe "Match found" eller "No match".
 
 <details>
 <summary>Se svar</summary>
@@ -545,14 +517,14 @@ if ((price >= 100 && price <= 500) &&
 
 ### Opgave 2.24: Grade boundaries
 **Opgave:**
-Find hvilke conditions der giver hver grade. Brug score = 75.
-
-Regler:
+Skriv kode der opretter `score = 75` og String variabel `grade` (uden værdi). Brug if-else-if-else til at tildele grade baseret på:
 - A: score >= 90
 - B: score >= 80 AND score < 90
 - C: score >= 70 AND score < 80
 - D: score >= 60 AND score < 70
 - F: score < 60
+
+Print "Grade: [grade]" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -582,8 +554,7 @@ System.out.println("Grade: " + grade);
 
 ### Opgave 2.25: Complex validation
 **Opgave:**
-Password valid hvis: (length >= 8) AND (har både uppercase OG lowercase) AND NOT containsSpaces.
-Simulate med hasUpper = true, hasLower = true, length = 10, hasSpaces = false.
+Skriv kode der opretter `length = 10`, `hasUpper = true`, `hasLower = true`, og `hasSpaces = false`. Password valid hvis: (length >= 8) AND (hasUpper AND hasLower) AND NOT hasSpaces. Brug et if-else statement til at printe "Valid password" eller "Invalid password".
 
 <details>
 <summary>Se svar</summary>
@@ -605,7 +576,6 @@ if ((length >= 8) && (hasUpper && hasLower) && !hasSpaces) {
 
 ---
 
-
 ## Refleksionsspørgsmål
 
 Efter du har løst opgaverne, tænk over:
@@ -616,5 +586,3 @@ Efter du har løst opgaverne, tænk over:
 5. Hvordan kan du simplify complex conditions?
 6. Hvad er forskellen mellem `(A && B) || C` og `A && (B || C)`?
 7. Hvordan tester du om dine boolean expressions virker korrekt?
-
-

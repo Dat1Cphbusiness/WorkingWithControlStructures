@@ -1,6 +1,5 @@
 ## Level 3 Opgaver: Switch-case
 
-
 - [Del A: basic-switch-statements](#del-a-basic-switch-statements)
 - [Del B: switch-with-strings](#del-b-switch-with-strings)
 - [Del C: grouping-cases-fall-through](#del-c-grouping-cases-fall-through)
@@ -15,7 +14,7 @@
 📖 [Se forklaring: Switch Statement Basics](../concepts/level3.md/#switch-statement-basics)
 
 **Opgave:**
-Opret `day` = 3. Brug switch til at print day name (1=Monday, 2=Tuesday, 3=Wednesday).
+Skriv kode der opretter `day = 3`. Brug et switch statement til at printe day name (1=Monday, 2=Tuesday, 3=Wednesday).
 
 <details>
 <summary>Se svar</summary>
@@ -42,7 +41,7 @@ switch (day) {
 
 ### Opgave 3.2: Complete week
 **Opgave:**
-Udvid switch til at håndtere alle 7 dage. Test med day = 5.
+Skriv kode der opretter `day = 5`. Udvid switch statement fra opgave 3.1 til at håndtere alle 7 dage (1-7).
 
 <details>
 <summary>Se svar</summary>
@@ -81,7 +80,7 @@ switch (day) {
 
 ### Opgave 3.3: Default case
 **Opgave:**
-Tilføj `default` case til at håndtere invalid day numbers. Test med day = 10.
+Skriv kode der opretter `day = 10`. Tilføj en default case til switch statement fra opgave 3.2 til at håndtere invalid day numbers.
 
 <details>
 <summary>Se svar</summary>
@@ -126,7 +125,7 @@ switch (day) {
 📖 [Se forklaring: Switch med Strings](../concepts/level3.md/#switch-med-strings)
 
 **Opgave:**
-Opret `command` = "start". Print besked for: "start", "stop", "pause".
+Skriv kode der opretter `command = "start"`. Brug et switch statement til at printe beskeder for commands: "start", "stop", "pause". Tilføj en default case for unknown commands.
 
 <details>
 <summary>Se svar</summary>
@@ -155,7 +154,7 @@ switch (command) {
 
 ### Opgave 3.5: Case sensitivity
 **Opgave:**
-Test om "START" matcher "start" i switch. Hvad sker der?
+Skriv kode der opretter `command = "START"` (uppercase). Brug et switch statement med cases for "start", "stop", "pause" og default. Hvad bliver output?
 
 <details>
 <summary>Se svar</summary>
@@ -179,7 +178,7 @@ switch (command) {
 
 ### Opgave 3.6: Traffic light
 **Opgave:**
-Opret `color` = "red". Print action: "red"→Stop, "yellow"→Slow, "green"→Go.
+Skriv kode der opretter `color = "red"`. Brug et switch statement til at printe action for traffic light colors: "red"→"Stop", "yellow"→"Slow down", "green"→"Go". Tilføj default case.
 
 <details>
 <summary>Se svar</summary>
@@ -208,7 +207,7 @@ switch (color) {
 
 ### Opgave 3.7: Month names
 **Opgave:**
-Opret `month` = "March". Print season: Dec-Feb→Winter, Mar-May→Spring, Jun-Aug→Summer, Sep-Nov→Fall.
+Skriv kode der opretter `month = "March"`. Brug et switch statement med grouped cases til at printe season: Dec-Feb→"Winter", Mar-May→"Spring", Jun-Aug→"Summer", Sep-Nov→"Fall".
 
 <details>
 <summary>Se svar</summary>
@@ -248,7 +247,7 @@ switch (month) {
 
 ### Opgave 3.8: Calculator operation
 **Opgave:**
-Opret `operation` = "add", `a` = 10, `b` = 5. Beregn baseret på operation.
+Skriv kode der opretter `operation = "add"`, `a = 10`, `b = 5`, og int variabel `result` (uden værdi). Brug et switch statement til at beregne result baseret på operation ("add", "subtract", "multiply", "divide"). Print result til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -290,7 +289,7 @@ System.out.println("Result: " + result);
 📖 [Se forklaring: Grouping Cases](../concepts/level3.md/#grouping-cases-intentional-fall-through)
 
 **Opgave:**
-Brug grouped cases til at check weekend. Day 6 og 7 = "Weekend", 1-5 = "Weekday".
+Skriv kode der opretter `day = 6`. Brug et switch statement med grouped cases til at printe "Weekend" for day 6 og 7, "Weekday" for day 1-5, og "Invalid day" for andre værdier.
 
 <details>
 <summary>Se svar</summary>
@@ -321,7 +320,7 @@ switch (day) {
 
 ### Opgave 3.10: Vowel check
 **Opgave:**
-Check om char er vowel. Group a,e,i,o,u sammen. Test med ch = 'e'.
+Skriv kode der opretter `ch = 'e'`. Brug et switch statement med grouped cases til at printe "Vowel" hvis ch er a, e, i, o, eller u, ellers "Consonant".
 
 <details>
 <summary>Se svar</summary>
@@ -348,7 +347,7 @@ switch (ch) {
 
 ### Opgave 3.11: Grade categories
 **Opgave:**
-Group grades: A,B = "Good", C,D = "Average", F = "Poor". Test med grade = 'B'.
+Skriv kode der opretter `grade = 'B'`. Brug et switch statement med grouped cases til at printe "Good" for A eller B, "Average" for C eller D, "Poor" for F, og "Invalid grade" for andre.
 
 <details>
 <summary>Se svar</summary>
@@ -379,7 +378,7 @@ switch (grade) {
 
 ### Opgave 3.12: Number categories
 **Opgave:**
-Group numbers: 1-3 = "Low", 4-7 = "Medium", 8-10 = "High". Test med num = 5.
+Skriv kode der opretter `num = 5`. Brug et switch statement med grouped cases til at printe "Low" for 1-3, "Medium" for 4-7, "High" for 8-10, og "Out of range" for andre.
 
 <details>
 <summary>Se svar</summary>
@@ -415,7 +414,7 @@ switch (num) {
 
 ### Opgave 3.13: Days in month
 **Opgave:**
-Group months by days: months 1,3,5,7,8,10,12 have 31 days. Test med month = 7.
+Skriv kode der opretter `month = 7` og int variabel `days` (uden værdi). Brug et switch statement til at tildele days baseret på month: months 1,3,5,7,8,10,12 har 31 days, months 4,6,9,11 har 30 days, month 2 har 28 days. Print "Days: [days]" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -459,24 +458,22 @@ System.out.println("Days: " + days);
 
 ### Opgave 3.14: When to use switch
 **Opgave:**
-Hvilken ville du bruge switch til, hvilken if-else? Marker hver.
+For hver af disse scenarios, beslut om switch eller if-else er bedst:
 
-| Scenario | switch | if-else |
-|----------|--------|---------|
-| Check if age > 18 | <input type="checkbox"> | <input type="checkbox"> |
-| Menu choice 1-5 | <input type="checkbox"> | <input type="checkbox"> |
-| Day of week 1-7 | <input type="checkbox"> | <input type="checkbox"> |
-| Check if (age > 18 && hasLicense) | <input type="checkbox"> | <input type="checkbox"> |
+1. Check if age > 18
+2. Menu choice 1-5
+3. Day of week 1-7
+4. Check if (age > 18 && hasLicense)
 
 <details>
 <summary>Se svar</summary>
 
-| Scenario | switch | if-else |
-|----------|--------|---------|
-| Check if age > 18 | ❌ | ✅ |
-| Menu choice 1-5 | ✅ | ❌ |
-| Day of week 1-7 | ✅ | ❌ |
-| Check if (age > 18 && hasLicense) | ❌ | ✅ |
+**Svar:**
+
+1. Check if age > 18: **if-else** (range check, ikke equality)
+2. Menu choice 1-5: **switch** (simple equality checks)
+3. Day of week 1-7: **switch** (simple equality checks)
+4. Check if (age > 18 && hasLicense): **if-else** (complex condition, multiple variables)
 
 **Regel:** 
 - Switch: simple equality checks på én variabel
@@ -487,7 +484,7 @@ Hvilken ville du bruge switch til, hvilken if-else? Marker hver.
 
 ### Opgave 3.15: Rewrite if-else as switch
 **Opgave:**
-Omskriv denne if-else til switch:
+Skriv kode der omskriver denne if-else til et switch statement:
 
 ```java
 int choice = 2;
@@ -555,9 +552,7 @@ if (age >= 18 && age < 65) {
 
 ### Opgave 3.17: Best choice
 **Opgave:**
-Implementer "ticket pricing" med switch: age 1-12 = 50kr, 13-17 = 75kr, 18-64 = 100kr, 65+ = 60kr.
-
-Kan du? Hvorfor/hvorfor ikke?
+Skriv kode til ticket pricing baseret på age: age 1-12 = 50kr, 13-17 = 75kr, 18-64 = 100kr, 65+ = 60kr. Kan du bruge switch? Hvorfor/hvorfor ikke? Implementer med den bedste løsning.
 
 <details>
 <summary>Se svar</summary>
@@ -567,18 +562,18 @@ Kan du? Hvorfor/hvorfor ikke?
 // Switch kan ikke håndtere dette elegantly
 
 // FORKERT måde (ville kræve alle cases 1-100):
+// Dette er upraktisk:
+// switch (age) {
+//     case 1: case 2: case 3: ... case 12:
+//         price = 50;
+//         break;
+//     // Osv...
+// }
+
+// KORREKT måde - brug if-else:
 int age = 25;
 int price;
 
-// Dette er upraktisk:
-switch (age) {
-    case 1: case 2: case 3: ... case 12:
-        price = 50;
-        break;
-    // Osv...
-}
-
-// KORREKT måde - brug if-else:
 if (age >= 1 && age <= 12) {
     price = 50;
 } else if (age >= 13 && age <= 17) {
@@ -599,7 +594,7 @@ System.out.println("Price: " + price + " kr");
 
 ### Opgave 3.18: Multi-value calculation
 **Opgave:**
-Baseret på month number, beregn quarter (Q1, Q2, Q3, Q4). Test med month = 5.
+Skriv kode der opretter `month = 5` og String variabel `quarter` (uden værdi). Brug et switch statement til at tildele quarter baseret på month number: 1-3 = "Q1", 4-6 = "Q2", 7-9 = "Q3", 10-12 = "Q4". Print "Quarter: [quarter]" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -642,7 +637,7 @@ System.out.println("Quarter: " + quarter);
 
 ### Opgave 3.19: Grade points
 **Opgave:**
-Convert letter grade til points: A=12, B=10, C=7, D=4, F=0. Test med grade = 'B'.
+Skriv kode der opretter `grade = 'B'` og int variabel `points` (uden værdi). Brug et switch statement til at konvertere letter grade til points: A=12, B=10, C=7, D=4, F=0. Print "Points: [points]" hvis grade er valid.
 
 <details>
 <summary>Se svar</summary>
@@ -683,8 +678,7 @@ if (points >= 0) {
 
 ### Opgave 3.20: Nested logic with switch
 **Opgave:**
-Brug switch til at find category, derefter if-else til at check subcategory.
-category = "fruit", item = "apple".
+Skriv kode der opretter `category = "fruit"`, `item = "apple"`, og String variabel `description` (uden værdi). Brug et switch statement på category, og INDEN I hver case brug if-else til at check item. For "fruit": apple→"Red apple", banana→"Yellow banana", andet→"Unknown fruit". For "vegetable": carrot→"Orange carrot", andet→"Unknown vegetable". Print description til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -724,7 +718,7 @@ System.out.println(description);
 
 ### Opgave 3.21: Switch with calculation
 **Opgave:**
-Calculator med to numbers (a=15, b=3) og operation. Beregn result og print.
+Skriv kode der opretter `a = 15`, `b = 3`, `operation = "divide"`, double variabel `result` (uden værdi), og boolean variabel `validOperation = true`. Brug et switch statement til at beregne result baseret på operation. For "divide", check først om b != 0. Hvis operation er invalid eller division by zero, sæt validOperation til false. Print result kun hvis validOperation er true.
 
 <details>
 <summary>Se svar</summary>
@@ -772,7 +766,7 @@ if (validOperation) {
 
 ### Opgave 3.22: Work schedule
 **Opgave:**
-Baseret på day (1-7), print work hours: Mon-Thu = 8h, Fri = 6h, Weekend = 0h.
+Skriv kode der opretter `day = 3` og int variabel `workHours` (uden værdi). Brug et switch statement med grouped cases til at tildele workHours baseret på day: Mon-Thu (1-4) = 8 hours, Fri (5) = 6 hours, Weekend (6-7) = 0 hours. Print "Work hours: [workHours]" til sidst.
 
 <details>
 <summary>Se svar</summary>
@@ -806,7 +800,6 @@ System.out.println("Work hours: " + workHours);
 </details>
 
 ---
-
 
 ## Refleksionsspørgsmål
 
